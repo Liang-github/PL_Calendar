@@ -36,6 +36,7 @@
 		7662BC0C2008AE6F00666AF5 /* CalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662BC0B2008AE6F00666AF5 /* CalendarHeaderView.m */; };
 		7662BC0F2008AE8100666AF5 /* WeekLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662BC0E2008AE8100666AF5 /* WeekLabel.m */; };
 		76DED3DB200C4020005DEF54 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DED3DA200C4020005DEF54 /* CalendarView.m */; };
+		76DED3DF200C6D9A005DEF54 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DED3DE200C6D9A005DEF54 /* UIView+Animation.m */; };
 		F2C16FDBAD23D4AA0E147E81 /* libPods-PL_Calendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33471A3CDCF778A56FAA38A /* libPods-PL_Calendar.a */; };
 		F775145BA840FFE402D908C8 /* libPods-PL_CalendarUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E92FD66EC63C6ED6A0C19 /* libPods-PL_CalendarUITests.a */; };
 		FD70DDE5D8E056981C95A964 /* libPods-PL_CalendarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43332767832E15F56CE5C780 /* libPods-PL_CalendarTests.a */; };
@@ -108,6 +109,8 @@
 		7662BC0E2008AE8100666AF5 /* WeekLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeekLabel.m; sourceTree = "<group>"; };
 		76DED3D9200C4020005DEF54 /* CalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarView.h; sourceTree = "<group>"; };
 		76DED3DA200C4020005DEF54 /* CalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
+		76DED3DD200C6D9A005DEF54 /* UIView+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		76DED3DE200C6D9A005DEF54 /* UIView+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		77DD81D0CA02A5E08661205D /* Pods-PL_CalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_CalendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PL_CalendarUITests/Pods-PL_CalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		80403A27C39B6EE00150FE95 /* Pods-PL_Calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_Calendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-PL_Calendar/Pods-PL_Calendar.release.xcconfig"; sourceTree = "<group>"; };
 		8FBCA822CB3CABBFDD0FDB86 /* Pods-PL_CalendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_CalendarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PL_CalendarTests/Pods-PL_CalendarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 		7662BBDB2008989F00666AF5 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				76DED3DC200C6D55005DEF54 /* AnimationTool */,
 				76DED3D8200C3FF9005DEF54 /* CalendarCustomView */,
 				7662BC032008AE1600666AF5 /* CalendarView */,
 				7662BBFF2008A87D00666AF5 /* Model */,
@@ -282,6 +286,15 @@
 				76DED3DA200C4020005DEF54 /* CalendarView.m */,
 			);
 			path = CalendarCustomView;
+			sourceTree = "<group>";
+		};
+		76DED3DC200C6D55005DEF54 /* AnimationTool */ = {
+			isa = PBXGroup;
+			children = (
+				76DED3DD200C6D9A005DEF54 /* UIView+Animation.h */,
+				76DED3DE200C6D9A005DEF54 /* UIView+Animation.m */,
+			);
+			path = AnimationTool;
 			sourceTree = "<group>";
 		};
 		7CF0582AC928BAEF0BE5710D /* Pods */ = {
@@ -615,6 +628,7 @@
 				7662BBFE200899CA00666AF5 /* NSObject+DateTool.m in Sources */,
 				7662BBB92008980C00666AF5 /* main.m in Sources */,
 				76DED3DB200C4020005DEF54 /* CalendarView.m in Sources */,
+				76DED3DF200C6D9A005DEF54 /* UIView+Animation.m in Sources */,
 				7662BC062008AE3800666AF5 /* CalendarCell.m in Sources */,
 				7662BC0C2008AE6F00666AF5 /* CalendarHeaderView.m in Sources */,
 				7662BC022008A89B00666AF5 /* CalendarModel.m in Sources */,
@@ -785,6 +799,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PL_Calendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nanjingpinjia.PL-Calendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -799,6 +814,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PL_Calendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nanjingpinjia.PL-Calendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
