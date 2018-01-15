@@ -24,9 +24,7 @@ float radiansForDegress(int degrees){
     [UIView animateWithDuration:secs delay:0 options:option animations:^{
         self.frame = CGRectMake(destination.x, destination.y, ANIMATIONWIDTH, ANIMATIONHEIGHT);
     } completion:^(BOOL finished) {
-        if (delegate != nil) {
-            [delegate performSelector:method];
-        };
+        nil;
     }];
 }
 - (void)raceTo:(CGPoint)destination withSnapBack:(BOOL)withSnapback {

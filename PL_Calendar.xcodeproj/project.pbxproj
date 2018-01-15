@@ -37,6 +37,8 @@
 		7662BC0F2008AE8100666AF5 /* WeekLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662BC0E2008AE8100666AF5 /* WeekLabel.m */; };
 		76DED3DB200C4020005DEF54 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DED3DA200C4020005DEF54 /* CalendarView.m */; };
 		76DED3DF200C6D9A005DEF54 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DED3DE200C6D9A005DEF54 /* UIView+Animation.m */; };
+		76DED3E2200C8CBB005DEF54 /* CountDownImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DED3E1200C8CBB005DEF54 /* CountDownImg.m */; };
+		76DED3E5200C8E14005DEF54 /* DateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DED3E4200C8E14005DEF54 /* DateTool.m */; };
 		F2C16FDBAD23D4AA0E147E81 /* libPods-PL_Calendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A33471A3CDCF778A56FAA38A /* libPods-PL_Calendar.a */; };
 		F775145BA840FFE402D908C8 /* libPods-PL_CalendarUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 088E92FD66EC63C6ED6A0C19 /* libPods-PL_CalendarUITests.a */; };
 		FD70DDE5D8E056981C95A964 /* libPods-PL_CalendarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43332767832E15F56CE5C780 /* libPods-PL_CalendarTests.a */; };
@@ -111,6 +113,10 @@
 		76DED3DA200C4020005DEF54 /* CalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarView.m; sourceTree = "<group>"; };
 		76DED3DD200C6D9A005DEF54 /* UIView+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		76DED3DE200C6D9A005DEF54 /* UIView+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		76DED3E0200C8CBB005DEF54 /* CountDownImg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownImg.h; sourceTree = "<group>"; };
+		76DED3E1200C8CBB005DEF54 /* CountDownImg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownImg.m; sourceTree = "<group>"; };
+		76DED3E3200C8E14005DEF54 /* DateTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateTool.h; sourceTree = "<group>"; };
+		76DED3E4200C8E14005DEF54 /* DateTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateTool.m; sourceTree = "<group>"; };
 		77DD81D0CA02A5E08661205D /* Pods-PL_CalendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_CalendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PL_CalendarUITests/Pods-PL_CalendarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		80403A27C39B6EE00150FE95 /* Pods-PL_Calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_Calendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-PL_Calendar/Pods-PL_Calendar.release.xcconfig"; sourceTree = "<group>"; };
 		8FBCA822CB3CABBFDD0FDB86 /* Pods-PL_CalendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PL_CalendarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PL_CalendarTests/Pods-PL_CalendarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -220,6 +226,10 @@
 		7662BBDC200898AE00666AF5 /* HoverBtn */ = {
 			isa = PBXGroup;
 			children = (
+				76DED3E0200C8CBB005DEF54 /* CountDownImg.h */,
+				76DED3E1200C8CBB005DEF54 /* CountDownImg.m */,
+				76DED3E3200C8E14005DEF54 /* DateTool.h */,
+				76DED3E4200C8E14005DEF54 /* DateTool.m */,
 			);
 			path = HoverBtn;
 			sourceTree = "<group>";
@@ -625,7 +635,9 @@
 			files = (
 				7662BC092008AE5000666AF5 /* CalendarFootView.m in Sources */,
 				7662BBAE2008980B00666AF5 /* ViewController.m in Sources */,
+				76DED3E5200C8E14005DEF54 /* DateTool.m in Sources */,
 				7662BBFE200899CA00666AF5 /* NSObject+DateTool.m in Sources */,
+				76DED3E2200C8CBB005DEF54 /* CountDownImg.m in Sources */,
 				7662BBB92008980C00666AF5 /* main.m in Sources */,
 				76DED3DB200C4020005DEF54 /* CalendarView.m in Sources */,
 				76DED3DF200C6D9A005DEF54 /* UIView+Animation.m in Sources */,
